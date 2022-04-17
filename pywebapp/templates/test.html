@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/test.css') }}">
+    <link rel = "icon" href = "{{url_for('static', filename ='logos/PaqtLogo.svg')}}" alt="#" type = "image/x-icon"/>
+	<script src="https://kit.fontawesome.com/efe7be6edc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <div class="wrapper">
+        <div class="sidebar">
+      
+            <ul>
+               <li><a href="#"><i class="fas fa-home" class="fas"></i>Dashboard</a></li>
+               <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Chats</a></li>
+                <li><a href="#"> <img src="{{url_for('static', filename ='logos/grayScaleLogo.svg')}}" alt="#" class="fas"> My Paqt</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-check"></i> Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar"></i> Meetings</a></li>
+                <li><a href="#"><i class="fa-solid fa-tag"></i> Labels</a></li>
+           </ul> 
+
+        </div>
+   </div>
+
+   <div class="topFixedBar">
+      <div class="logo-title">
+        <img src="{{url_for('static', filename ='logos/PaqtLogo.svg')}}" alt="#" class="logo" />
+        <h2>PAQT</h2>
+        <button class="button">Create new paqt ⮟ </button>
+      </div>
+
+      <div class="dots">
+         <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+
+      <div class="notification">
+         <i class="fa-solid fa-bell"></i>
+      </div>
+
+      <div class="img">
+         <img src="{{url_for('static', filename ='logos/girl..PNG')}}" alt="#">
+      </div>
+
+
+      <div class="main">
+            <h2>Dashboard</h2>
+
+            <div class="columns">
+                 
+                <!-- column 1 -->
+                <div class="column1">
+                    <div class="circle"> 
+                        <div class="image">
+                             <i class="fa-solid fa-file-medical"></i>
+                        </div>
+
+                    </div>
+                    <p> Blank Document </p>
+                    
+                    
+                </div>
+                
+                <!-- column 2 -->
+                <div class="column2">
+                    <div class="circle2"> 
+                        <div class="images">
+                             <i class="fa-solid fa-upload"></i>
+                        </div>
+                    </div>
+                    <p> Upload PDF/Doc </p>
+                </div>
+                
+                <!-- column 3 -->
+                <div class="column3">
+                    <div class="circle3"> 
+                        <div class="images">
+                             <i class="fa-solid fa-folder-minus"></i>
+                        </div> 
+                    </div> 
+                    <p>Template Library  </p>
+                </div>
+                
+            </div> <!-- / columns -->
+
+            <h4> <strong>Recent Paqts</strong></h4>
+    
+        </div>
+
+
+   </div>
+
+</body>
+</html>
